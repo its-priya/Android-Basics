@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/Username"
+                android:textColor="@color/colorCrimson"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/Password"
+                android:textColor="@color/colorCrimson"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Password"
+                android:inputType="textWebPassword"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/Checkbox"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:padding="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="57dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorCrimson"
+                    android:onClick="clearFun"
+                    android:padding="30dp"
+                    android:text="@string/Clear"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="right"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPaleVioletRed"
+                    android:onClick="submitFun"
+                    android:padding="10dp"
+                    android:text="@string/Submit"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorSlateGray"
+                    android:onClick="cancelFun"
+                    android:padding="10dp"
+                    android:text="@string/cancel"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ListView
+                android:id="@+id/lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intents">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:hint="Number 1"
+        android:inputType="number"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Number 2"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/num1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintStart_toEndOf="@+id/num1"
+        app:layout_constraintTop_toTopOf="@+id/num1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:hint="Result"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/add"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/add"
+        app:layout_constraintTop_toBottomOf="@+id/add" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addFun"
+        android:text="ADD"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <Button
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:onClick="openWebsite"
+        android:text="Google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <Button
+        android:id="@+id/cameraId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:text="Camera"
+        app:layout_constraintBottom_toBottomOf="@+id/web"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/web"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/dialId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Dial"
+        app:layout_constraintEnd_toEndOf="@+id/web"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/web"
+        app:layout_constraintTop_toBottomOf="@+id/web" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="130dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="28dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintEnd_toEndOf="@+id/res"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/res"
+        app:layout_constraintTop_toBottomOf="@+id/res" />
+
+    <Button
+        android:id="@+id/clickId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Click"
+        app:layout_constraintBottom_toBottomOf="@+id/img"
+        app:layout_constraintStart_toEndOf="@+id/img"
+        app:layout_constraintTop_toTopOf="@+id/img" />
+
+    <Button
+        android:id="@+id/gallaryId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallary"
+        app:layout_constraintBottom_toBottomOf="@+id/dialId"
+        app:layout_constraintEnd_toEndOf="@+id/cameraId"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cameraId"
+        app:layout_constraintTop_toBottomOf="@+id/cameraId"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/mapId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="Map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dialId"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sendMsgId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:onClick="sendMessage"
+        android:text="Send msg"
+        app:layout_constraintBottom_toBottomOf="@+id/mapId"
+        app:layout_constraintStart_toEndOf="@+id/mapId"
+        app:layout_constraintTop_toTopOf="@+id/mapId"/>
+
+    <Button
+        android:id="@+id/openMsgId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Msg"
+        android:onClick="openMessageApp"
+        app:layout_constraintBottom_toBottomOf="@+id/sendMsgId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toEndOf="@+id/sendMsgId"
+        app:layout_constraintTop_toTopOf="@+id/sendMsgId"  />
+</androidx.constraintlayout.widget.ConstraintLayout>

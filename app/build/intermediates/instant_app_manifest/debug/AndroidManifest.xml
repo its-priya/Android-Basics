@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.basic"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="25"
+        android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.basic.NewWidgets" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.basic.LoginPage" />
+        <activity android:name="com.example.basic.BMIcalculator" />
+        <activity android:name="com.example.basic.GuessGame" />
+        <activity android:name="com.example.basic.MenusDemo" />
+        <activity android:name="com.example.basic.AddContact" />
+        <activity android:name="com.example.basic.PhoneCall" >
+        </activity>
+        <activity android:name="com.example.basic.ToDoList" />
+        <activity android:name="com.example.basic.Intents" />
+        <activity android:name="com.example.basic.IntentsResult" />
+        <activity android:name="com.example.basic.ConstraintLayoutDemo" />
+        <activity android:name="com.example.basic.form1" />
+        <activity android:name="com.example.basic.GridLayouts" />
+        <activity android:name="com.example.basic.ListViewDemo" />
+        <activity android:name="com.example.basic.Form" />
+        <activity android:name="com.example.basic.SignUp" />
+        <activity android:name="com.example.basic.RelativeLayout" />
+        <activity android:name="com.example.basic.BasicLog" />
+        <activity android:name="com.example.basic.MainActivity" />
+    </application>
+
+</manifest>

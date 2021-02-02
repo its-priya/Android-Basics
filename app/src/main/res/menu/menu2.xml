@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/renameId"
+        android:title="Rename"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/removeId"
+        android:icon="@drawable/ic_delete"
+        android:title="Remove"
+        app:showAsAction="withText">
+        <menu>
+            <item
+                android:id="@+id/yesId"
+                android:title="Yes"
+                app:showAsAction="withText"/>
+            <item
+                android:id="@+id/noId"
+                android:title="No"
+                app:showAsAction="withText"/>
+        </menu>
+    </item>
+</menu>

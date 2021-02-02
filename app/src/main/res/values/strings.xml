@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">basic</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Clear">CLEAR</string>
+    <string name="cancel">CANCEL</string>
+    <string name="Submit">SUBMIT</string>
+    <string name="Checkbox">Remember Me</string>
+    <string name="name">Enter your Name</string>
+    <string name="password">Enter your password</string>
+    <string name="hello">Hello</string>
+    <string name="name1">Name</string>
+    <string name="password1">Password</string>
+    <string name="firstname">First Name</string>
+    <string name="submit">Submit</string>
+    <string name="changePassword"> Get help signing in.</string>
+    <string-array name="subjects">
+        <item>Using</item>
+        <item>String</item>
+        <item>Resource</item>
+    </string-array>
+    <string name="checkbox">I accept the Terms of Use &amp; Privacy Policy.</string>
+    <!--<string name="checkbox">I accept the &lt;font color=&quot;#008B8B&quot;&gt;Terms of Use&lt;/font&gt; &amp;amp; &lt;font color=&quot;#008B8B&quot;&gt;Privacy Policy.&lt;/font&gt;</string>-->
+    <string name="login">Already have an account? Login here.</string>
+</resources>
